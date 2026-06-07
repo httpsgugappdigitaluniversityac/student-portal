@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Portal Login</title>
+
+<style>
+body{
+    margin:0;
+    background:#dcdcdc;
+    font-family:Arial, sans-serif;
+}
+
+.header{
+    background:white;
+    padding:20px;
+    border-bottom:4px solid #c9a13b;
+}
+
+.logo{
+    font-size:34px;
+    color:#c97f22;
+    font-weight:bold;
+}
+
+.sub{
+    color:#666;
+    font-size:14px;
+}
+
+.title{
+    background:#f5f5f5;
+    color:#7d130d;
+    font-size:22px;
+    font-weight:bold;
+    padding:12px;
+    border-top:1px solid #ccc;
+}
+
+.box{
+    width:420px;
+    margin:80px auto;
+    background:#efefef;
+    border:1px solid #cfcfcf;
+    padding:40px;
+}
+
+input{
+    width:220px;
+    padding:8px;
+    border:2px solid #d44;
+    margin:6px;
+}
+
+button{
+    padding:8px 30px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.footer{
+    text-align:center;
+    color:#666;
+    margin-top:100px;
+}
+</style>
+
+<script>
+function login(){
+
+let prn=document.getElementById("prn").value;
+let pass=document.getElementById("pass").value;
+
+if(prn=="2019033700023202" && pass=="Pass@190600"){
+window.location.href="Msc. Chem sem-I.pdf";
+}
+else{
+alert("Invalid Username or Password");
+}
+
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+<div class="logo">Student Portal</div>
+<div class="sub">Academic Demo Project</div>
+</div>
+
+<div class="title">
+Login here
+</div>
+
+<div class="box">
+
+<table>
+<tr>
+<td><b>PRN / UserName :</b></td>
+<td><input id="prn"></td>
+</tr>
+
+<tr>
+<td><b>Password :</b></td>
+<td><input type="password" id="pass"></td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+<button onclick="login()">Login</button>
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="footer">
+Copyright © 2026 Student Portal
+</div>
+
+</body>
+</html>
