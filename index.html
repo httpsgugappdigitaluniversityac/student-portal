@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Portal Login</title>
+
+<style>
+body{
+    margin:0;
+    background:#e5e5e5;
+    font-family:Arial, sans-serif;
+}
+
+.header{
+    background:white;
+    padding:20px;
+    border-bottom:4px solid #c9a43d;
+}
+
+.university{
+    font-size:32px;
+    color:#c67a1f;
+    font-weight:bold;
+}
+
+.sub{
+    color:#666;
+    font-size:14px;
+}
+
+.login-title{
+    background:white;
+    margin-top:10px;
+    padding:12px 20px;
+    color:#8b0000;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.box{
+    width:420px;
+    margin:80px auto;
+    background:#f5f5f5;
+    border:1px solid #ccc;
+    padding:40px;
+}
+
+.row{
+    margin-bottom:20px;
+}
+
+label{
+    display:inline-block;
+    width:140px;
+    font-weight:bold;
+}
+
+input{
+    width:220px;
+    padding:8px;
+    border:2px solid #c44;
+}
+
+button{
+    margin-left:145px;
+    padding:8px 35px;
+}
+
+#msg{
+    text-align:center;
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="university">University Student Portal</div>
+    <div class="sub">Practice Project</div>
+</div>
+
+<div class="login-title">
+    Login here
+</div>
+
+<div class="box">
+
+<div class="row">
+<label>PRN / UserName</label>
+<input type="text" id="prn">
+</div>
+
+<div class="row">
+<label>Password</label>
+<input type="password" id="pass">
+</div>
+
+<button onclick="login()">Login</button>
+
+<div id="msg"></div>
+
+</div>
+
+<script>
+function login(){
+    document.getElementById("msg").innerHTML =
+    "Login Successful";
+}
+</script>
+
+</body>
+</html>
