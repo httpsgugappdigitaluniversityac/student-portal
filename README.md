@@ -1,1 +1,1 @@
-Gondwana-university-student-portal
+student-portal
